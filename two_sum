@@ -1,0 +1,8 @@
+class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        map_n = {}
+        for i,num in enumerate(nums):
+            pair = target - num
+            if num in map_n:
+                return [map_n[num] , i]
+            map_n[pair]=i 
