@@ -1,0 +1,12 @@
+class Solution:
+    def containsDuplicate(self, nums: List[int]) -> bool:
+        map_list = {}
+        # map_list = {}   <--ini akan dianggap
+        # dictionary kosong, bukan set. jadi jangan pakai map_list.add(n)
+        # karena ini dictionary, maka gunakan:
+        # map_list[n]='value' 
+        for n in nums:
+            if n in map_list:
+                return True
+            map_list[n]='yes'
+        return False
