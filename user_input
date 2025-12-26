@@ -1,0 +1,12 @@
+# first commit: 26.12.25
+# using user input
+def cekUmur(u: int):
+  if 1<= u <=10:
+    print(f"umur kamu adalah {u} dan kamu adalah anak-anak")
+  if 11<= u <=17:
+    print(f"umur kamu adalah {u} dan kamu adalah remaja")
+  else:
+    print(f"kamu berusia {u} dan kamu adalah orang dewasa")
+
+user_input=int(input("masukkan umur kamu: "))
+cekUmur(user_input)
