@@ -5,9 +5,9 @@ class Solution:
 
         arr_s=list(s)  # <--berfungsi untuk menjadikan string kata, menjadi list array
 
-        arr_balik=arr_s[::-1]  #<--berfungsi untuk membalik order elemen belakang jadi depan
-        # print(arr_balik)/// s='VIII' -> arr_balik=['I', 'I', 'I', 'V']
-        
+        arr_balik = arr_s[::-1]  #<--berfungsi untuk membalik order elemen belakang jadi depan
+        # print(arr_balik)/// arr_s=['V', 'I', 'I', 'I'] -> arr_balik=['I', 'I', 'I', 'V']
+
         print(list(reversed(s)))
 
         n=len(arr_balik)
