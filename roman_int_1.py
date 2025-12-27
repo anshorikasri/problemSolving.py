@@ -9,7 +9,7 @@ class Solution:
         val= dict_s[arr_balik[0]]
         # print(val)
         n=len(arr_balik)
-        pointer=0
+        # pointer=0    <-- i think this is not use
         for i in range(n-1):
             if dict_s[arr_balik[i]] == dict_s[arr_balik[i+1]]:
                 val = val + dict_s[arr_balik[i+1]]
