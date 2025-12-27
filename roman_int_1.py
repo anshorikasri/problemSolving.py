@@ -2,10 +2,12 @@
 class Solution:
     def romanToInt(self, s: str) -> int:
         dict_s={'I':1, 'V':5, 'X':10, 'L':50, 'C':100, 'D':500, "M":1000}
-        
-        arr_s=list(s)
-        arr_balik=arr_s[::-1]
+
+        arr_s=list(s)  # <--berfungsi untuk menjadikan string kata, menjadi list array
+
+        arr_balik=arr_s[::-1]  #<--berfungsi untuk membalik order elemen belakang jadi depan
         # print(arr_balik)/// s='VIII' -> arr_balik=['I', 'I', 'I', 'V']
+        
         print(list(reversed(s)))
 
         n=len(arr_balik)
