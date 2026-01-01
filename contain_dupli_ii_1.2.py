@@ -20,3 +20,9 @@ class Solution:
             last_seen[n] = i
         return False 
 
+# kita instance:
+solusi = Solution()
+
+# kita sudah instance class itu. selanjutnya panggil method fungsi
+print(solusi.containsNearbyDuplicate([1,2,5,6,7,1,9] , 4))
+print(solusi.containsNearbyDuplicate([1,2,5,6,7,1,9] , 6))
