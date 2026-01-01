@@ -28,3 +28,10 @@ class Solution:
                         return True
         return False
 
+# code di ataas menggunakan bentuk class,
+# dengan metod yang ada, yaitu: 
+# def containsNearbyDuplicate(self, nums: List[int], k: int) -> bool:
+solusi = Solution()
+
+print(solusi.containsNearbyDuplicate([9,7,1,9,8,2], 3))
+print(solusi.containsNearbyDuplicate([9,7,1,9,8,2], 1))
