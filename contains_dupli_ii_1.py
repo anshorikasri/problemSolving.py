@@ -24,11 +24,11 @@ def containsNearbyDuplicate(nums, k) -> bool:
         # v --> values
 
         dupli_num = {}
-        for k,v  in map_num.items():
-            if v in dupli_num:
-                dupli_num[v].append(k)
+        for ke,va  in map_num.items():
+            if va in dupli_num:
+                dupli_num[va].append(ke)
             else:
-                dupli_num[v] = [k]  
+                dupli_num[va] = [ke]  
                 #kalu nilai yang ditambah dgn menggunakan kurung, nanti jadi list
         print('dupli_num =')
         print(dupli_num)
@@ -36,11 +36,16 @@ def containsNearbyDuplicate(nums, k) -> bool:
 
         more_one = []
         for val in dupli_num.values():
-            if len(val)>1:
-                print('val =')
-                print(val)
+            for i in range( len(val) - 1):
+                if val[i+1] - val[i] <= k:
+        #             return True
+        # return False
+                    return print('True')
+        return print('False')
 
 
 
 
-ans = containsNearbyDuplicate([9,7,1,9,8,8], 3)
+
+containsNearbyDuplicate([9,7,1,9,8,2], 3)
+containsNearbyDuplicate([9,7,1,9,8,2], 1)
