@@ -20,22 +20,6 @@ class Libataku:
 
 # =========
 
-
-jawab= Libataku()
-
-jwb1 = jawab.kali3(12)
-jwb2 = jawab.bagi2(12)
-jwb3 = jawab.add5(12)
-jwb4 = jawab.subtract4(12)
-
-print(jwb1)
-print(jwb2)
-print(jwb3)
-print(jwb4)
-
-# =========
-
-
 # menggunakan dispatch (translate: 'tugas')
 hasil = Libataku()
 
@@ -45,6 +29,7 @@ tugas = {
     "add5"  : hasil.add5,
     "sub4"  : hasil.subtract4
 }
+
 
 # =========
 ans1 = tugas["kali3"](18)
