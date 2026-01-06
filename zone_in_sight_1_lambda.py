@@ -2,17 +2,17 @@
 #start: 06.01.2026
 # =========
 
-# IT CAN NOT WORK, BECAUSE WITHOUT 'self'
+# IT CAN WORK, BECAUSE WITH 'self'
 
 class Variatif:
 
     # traditional
-    def addFive(n):
+    def addFive(self,n):
         return n+5
     
 
     #lambda
-    addSix= lambda x: x+6
+    addSix= lambda self,x: x+6
 
 coba1 = Variatif()
 
