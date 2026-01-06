@@ -16,7 +16,9 @@ class Variatif:
 
 coba1 = Variatif()
 
-coba1.addFive(2)
-coba1.addSix(2)
+ans5 = coba1.addFive(2)
+ans6 = coba1.addSix(2)
 
+print(ans5)
+print(ans6)
 
