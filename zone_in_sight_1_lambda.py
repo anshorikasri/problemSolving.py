@@ -11,6 +11,8 @@ class Variatif:
 
     #lambda
     addSix= lambda self,x: x+6
+# =========
+
 
 # instance
 coba1 = Variatif()
