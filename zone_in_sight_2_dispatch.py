@@ -36,3 +36,22 @@ print(jwb4)
 # =========
 
 
+# menggunakan dispatch (translate: 'tugas')
+tugas = {
+    "kali3" : kali3,
+    "bagi2" : bagi2,
+    "add5"  : add5,
+    "sub4"  : subtract4
+}
+
+# =========
+ans1 = tugas["kali3"](18)
+ans2 = tugas["bagi2"](18)
+ans3 = tugas["add5"](18)
+ans4 = tugas["sub4"](18)
+
+
+print(ans1)
+print(ans2)
+print(ans3)
+print(ans4)
