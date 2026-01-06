@@ -1,0 +1,161 @@
+#lesson:wawasan\database
+#start: 06.01.2026
+# =========
+
+
+
+CMD / Terminal
+   ↓
+Linux Shell (bash)
+   ↓
+MySQL Client (mysql>)
+
+
+
+
+
+
+Linux
+ ├── MySQL (running, not pushed)
+ │    └── Tables + Data (❌ not git-managed)
+ │
+ └── Project Folder (git-managed ✅)
+      ├── SQL files
+      ├── Schema
+      ├── Migrations
+      ├── Seed data
+      └── App code
+
+
+
+
+
+
+my-database-project/
+│
+├── README.md
+│   └── Project description, setup instructions
+│
+├── db/
+│   │
+│   ├── schema/
+│   │   ├── 001_create_users.sql
+│   │   ├── 002_create_orders.sql
+│   │   └── 003_create_transactions.sql
+│   │
+│   ├── seed/
+│   │   ├── users_seed.sql
+│   │   ├── orders_seed.sql
+│   │   └── transactions_seed.sql
+│   │
+│   ├── migrations/
+│   │   ├── 20240101_add_email_to_users.sql
+│   │   └── 20240110_add_index_to_orders.sql
+│   │
+│   └── queries/
+│       ├── join_examples.sql
+│       ├── analytics.sql
+│       └── leetcode_practice.sql
+│
+├── scripts/
+│   ├── init_db.sh
+│   └── reset_db.sh
+│
+├── .gitignore
+│   └── Ignore passwords, local configs, temp files
+│
+└── docker/
+    ├── Dockerfile
+    └── docker-compose.yml
+
+
+
+
+
+
+sql-practice/
+│
+├── schema.sql
+├── seed.sql
+├── queries.sql
+└── README.md
+
+
+
+
+
+========================
+
+
+
+
+
+
+my-github/
+│
+├── README.md
+│   └── 👋 About me, what I’m learning, tech stack
+│
+├── sql-database-learning/
+│   │
+│   ├── README.md
+│   │   └── How to run SQL files, what this repo contains
+│   │
+│   ├── db/
+│   │   ├── schema/
+│   │   │   ├── employees.sql
+│   │   │   ├── products.sql
+│   │   │   └── transactions.sql
+│   │   │
+│   │   ├── seed/
+│   │   │   ├── employees_seed.sql
+│   │   │   └── transactions_seed.sql
+│   │   │
+│   │   └── migrations/
+│   │       ├── 001_create_tables.sql
+│   │       └── 002_add_indexes.sql
+│   │
+│   ├── queries/
+│   │   ├── joins/
+│   │   │   ├── inner_join.sql
+│   │   │   ├── left_join.sql
+│   │   │   └── right_join.sql
+│   │   │
+│   │   ├── leetcode/
+│   │   │   ├── 1068_product_sales_analysis.sql
+│   │   │   ├── 1378_replace_employee_id.sql
+│   │   │   └── 1581_no_transaction_visits.sql
+│   │   │
+│   │   └── window_functions/
+│   │       ├── lag_example.sql
+│   │       ├── lead_example.sql
+│   │       └── temperature_diff.sql
+│   │
+│   └── screenshots/
+│       └── sample_output.png
+│
+├── linux-notes/
+│   ├── mysql_commands.md
+│   ├── git_basics.md
+│   └── bash_cheatsheet.md
+│
+├── future-projects/
+│   ├── orm-demo/
+│   └── docker-mysql/
+│
+└── .gitignore
+
+
+
+
+
+
+
+
+sql-practice/
+│
+├── README.md
+├── schema.sql
+├── seed.sql
+├── leetcode.sql
+└── joins.sql
