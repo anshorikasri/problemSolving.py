@@ -37,11 +37,13 @@ print(jwb4)
 
 
 # menggunakan dispatch (translate: 'tugas')
+hasil = Libataku()
+
 tugas = {
-    "kali3" : kali3,
-    "bagi2" : bagi2,
-    "add5"  : add5,
-    "sub4"  : subtract4
+    "kali3" : hasil.kali3,
+    "bagi2" : hasil.bagi2,
+    "add5"  : hasil.add5,
+    "sub4"  : hasil.subtract4
 }
 
 # =========
