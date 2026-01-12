@@ -6,7 +6,7 @@
 
 
 class Solution:
-    def repeatedNTimes(self, nums: List[int]) -> int:
+    def repeatedNTimes(self, nums: list[int]):
 
         dict_n = {}
 
@@ -16,8 +16,17 @@ class Solution:
             else:
                 dict_n[n]=1
 
+        print('len(nums) =')
+        print(len(nums))
+        print('dict_n =')
         print(dict_n)
 
         for i in dict_n:
             if 2*dict_n[i] == len(nums):
                 return i
+
+# instance
+jwb = Solution()
+
+jwb1 = jwb.repeatedNTimes([1,7,3,7])
+print(jwb1)
