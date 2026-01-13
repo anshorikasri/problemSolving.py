@@ -30,3 +30,7 @@ class Solution:
         # print(array)
         return array
 
+# instance
+jwb=Solution()
+
+print(jwb.plusOne([1,2,3]))
