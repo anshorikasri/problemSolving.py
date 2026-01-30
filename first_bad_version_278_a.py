@@ -42,4 +42,31 @@ jwb=Solution()
 jwb2=jwb.firstBadVersion(4)
 print(jwb2)
 
-            
+# ----------------------------------------------------------
+# 30.01.2026
+
+isReVersi = {5:True, 4:True, 3:False, 2:False, 1:False}
+
+class Jawaban:
+    def reVersi(self, n: int) -> int:
+        
+        left=1
+        right=n
+
+        while left<=right:
+            mid = (left+right)//2
+            res = isReVersi[mid]
+
+            if res == False:
+                left=mid+1
+            elif res== True:
+                right=mid-1
+        return left
+
+hasil=Jawaban()
+hasil_1=hasil.reVersi(5)
+print(hasil_1)
+
+hasil=Jawaban()
+hasil_2=hasil.reVersi(10)
+print(hasil_2)
