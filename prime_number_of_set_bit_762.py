@@ -31,7 +31,6 @@ class Solution:
             for i in range(len(list_n)):
                 if list_n[i]==1:
                     value+=1
-            
             # print(list_n)
 
             list_bit.append(value)
